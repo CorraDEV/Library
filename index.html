@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-    
+    <button id="add-book">Add Book</button>
+    <dialog>        
+        <form>
+            <div>
+                <label for="author">Author</label>
+                <input id="author" type="text">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input id="title" type="text">
+            </div>
+            <div>
+                <label for="num_pages">Num pages</label>
+                <input id="num_pages" type="text">
+            </div>                        
+            <div>
+                <input id="add-book-btn" type="submit" value="Add">
+                <button id="close-btn">Close</button>
+            </div>
+        </form>
+    </dialog>    
 </body>
 </html>

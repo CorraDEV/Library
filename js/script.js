@@ -1,12 +1,14 @@
-function Book(){
-    let author = document.querySelector("#author").value; 
-    let title = document.querySelector("#title").value;
-    let num_pages = document.querySelector("#num_pages").value;    
-
-    this.author = author;
-    this.title = title;    
-    this.num_pages = num_pages;         
-    this.read = false;
+class Book{
+    constructor(){
+        let author = document.querySelector("#author").value; 
+        let title = document.querySelector("#title").value;
+        let num_pages = document.querySelector("#num_pages").value;    
+    
+        this.author = author;
+        this.title = title;    
+        this.num_pages = num_pages;         
+        this.read = false;
+    }    
 }
 
 function addBookToLibrary(){    
